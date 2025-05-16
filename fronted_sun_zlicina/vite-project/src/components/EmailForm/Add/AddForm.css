@@ -1,0 +1,27 @@
+.emailForm{
+    display: flex;
+    flex-direction: column;
+}
+.addForm{
+    display: flex;
+    flex-direction: column;
+}
+.addDivform{
+    display: flex;
+    justify-content: space-between;
+}
+.addDivform input {
+    width: 80%;
+    height: 30px;
+    padding: 4px;
+    border-radius: 0;
+    border: 1px solid black;
+}
+.messageInvalidEmail{
+    margin: 25px 25px;
+    color: red;
+    padding-top: 250px;
+}
+.addFormButton{
+    text-transform: capitalize;
+}

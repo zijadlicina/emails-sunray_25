@@ -1,0 +1,22 @@
+.chipsDiv{
+    display: inline-grid;
+     grid-template-columns: auto auto auto;
+}
+.chipItem{
+     background-color: rgb(238, 128, 146);
+     color: #fff;
+     width: 180px;
+     height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.chipItem span {
+ font-size: medium;
+
+}
+.chipItem .remove {
+    cursor: pointer;
+} 

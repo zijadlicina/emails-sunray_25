@@ -1,0 +1,8 @@
+.header{
+    font-weight: bold;
+}
+.emailForm{
+    display: flex;
+    height: 35%;
+    justify-content: space-around;
+}

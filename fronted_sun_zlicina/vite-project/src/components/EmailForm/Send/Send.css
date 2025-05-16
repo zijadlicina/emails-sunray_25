@@ -1,0 +1,8 @@
+.sendDiv{
+    margin-top: 25px;
+}
+.sendButton{
+    background-color: rgb(0, 0, 116);
+    color: #fff;
+    text-transform: capitalize;
+}

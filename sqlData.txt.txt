@@ -1,0 +1,75 @@
+-- MySQL dump 10.13  Distrib 8.0.40, for Win64 (x86_64)
+--
+-- Host: localhost    Database: users
+-- ------------------------------------------------------
+-- Server version	8.0.40
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `blackemails`
+--
+
+DROP TABLE IF EXISTS `blackemails`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `blackemails` (
+  `idblacklist` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`idblacklist`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `blackemails`
+--
+
+LOCK TABLES `blackemails` WRITE;
+/*!40000 ALTER TABLE `blackemails` DISABLE KEYS */;
+INSERT INTO `blackemails` VALUES (1,'gmail.com'),(2,'yahoo.com');
+/*!40000 ALTER TABLE `blackemails` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `emails`
+--
+
+DROP TABLE IF EXISTS `emails`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `emails` (
+  `id` varchar(45) NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `repeat` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `emails`
+--
+
+LOCK TABLES `emails` WRITE;
+/*!40000 ALTER TABLE `emails` DISABLE KEYS */;
+INSERT INTO `emails` VALUES ('1','asd@gmail.com',1),('a6fd1fb15554ca76','jessica@gmail.com',0),('204d587df902f319','jessica@gmail.com',0),('2f7a4e5693d56a95','jessica@gmail.com',0),('4f3e52aacf201e26','jessica@gmail.com',0),('622b8834756c3f01','ben@gmail.com',0),('1bdbbefb6d70c3de','ben@gmail.com',0),('75e2598dd0acc53b','ben@gmail.com',0),('49c76e683b14c01b','ben@gmail.com',0),('96c25b3b6a086478','fdsf@gmail.com',4),('01cf7ec616e64e03','fddddsf@gmail.com',3),('dcd1a5fc212f7929','2fddddsf@gmail.com',2),('929b42b4ac47757f','3333fddddsf@gmail.com',1),('f7ac2ddbbae6fcbc','zijad.slicina@s.com',9),('628eb752f043c417','zijad.licina@gmail44.com',9),('c53aef4d7661b28d','zijad@gad.com',1),('f4373c80c7fffef9','zijad@2gad.com',1),('67ccb831154597ea','zijad@2g4ad.com',1),('87e93e7dac40bfdb','asdsad@gmai33.co',0),('268d9d99de4fb02b','asdsad@gmaif33.co',0),('7f06fb28d1ee7093','asdsad@gm4aif33.co',0),('0d81990014388b71','asd@gmailsad.com',1),('a66dce07a593b06e','asd@gmail2sad.com',1),('ade31be8d1f8392d','asd@gmail2sa3d.com',1),('47a3487e1b6ab147','111asd@gmail2sa3d.com',0),('76d1b7220157f58f','11www1asd@gmail2sa3d.com',0),('3e38dc9d7554a4b2','zijad1@gmai1l.com',0),('20a38701c4eac8e5','zijad1@gmai1l.com',0),('6e5c20e0ee6d5feb','zijad1@gmai1l.com',0),('9bb34baafdf324e3','zijad1@gmail2.com',2),('c96e05be179e495e','zijad1@gmail2.com',0),('7235dfe9e04e9c65','zijad1@gmail2.com',0),('cf0ab3891438d7a0','perzijad1@gmail2.com',0),('c466d372c31d47dc','zijad1@gmai222l.com',2),('4c9b12ec5c3f6d88','zijad1@gmai222l.com',0),('d8f147811805d30b','zijad1@gmai222l.com',0),('30bf209984769e00','sadsaddzijad1@gmai222l.com',1),('cee10927ac8e9f4e','zijad.slicina@1s.com',0);
+/*!40000 ALTER TABLE `emails` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2025-05-16 10:36:06
